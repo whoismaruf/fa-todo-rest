@@ -19,7 +19,7 @@ A professional, scalable, and future-ready To-Do list REST API built with **Fast
 ## Project Structure
 
 ```
-fastapi-todo/
+fa-todo-rest/
 ├── alembic/
 │   └── versions/                 # Alembic migration scripts
 ├── app/
@@ -58,8 +58,8 @@ fastapi-todo/
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/fastapi-todo.git
-cd fastapi-todo
+git clone https://github.com/whoismaruf/fa-todo-rest.git
+cd fa-todo-rest
 ```
 
 2. Create and activate a virtual environment:
@@ -147,7 +147,7 @@ All settings are managed via environment variables loaded by `pydantic-settings`
 
 ## Contact
 
-Created by [Your Name] - feel free to reach out!
+Created by [Maruf Khan] - feel free to reach out!
 
 ---
 
