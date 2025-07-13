@@ -1,4 +1,13 @@
+import os
+from dotenv import load_dotenv
 from pydantic_settings import BaseSettings
+
+# Debug print: see where you're running the app from
+print("🔍 CWD:", os.getcwd())
+
+# Manually load .env
+load_dotenv()
+print("🔍 ENV VAR (os):", os.getenv("DATABASE_URL"))
 
 
 class Settings(BaseSettings):
@@ -11,3 +20,6 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+
+# Debug print: show what's actually loaded into Pydantic
+print("✅ settings.DATABASE_URL:", settings.DATABASE_URL)
