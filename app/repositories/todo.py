@@ -1,6 +1,6 @@
-from sqlmodel.ext.asyncio.session import AsyncSession
 from sqlmodel import select
 from app.models.todo import ToDo
+from sqlmodel.ext.asyncio.session import AsyncSession
 
 
 async def create_todo(data: ToDo, session: AsyncSession) -> ToDo:
